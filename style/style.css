@@ -14,6 +14,7 @@ body {
 
 .header {
   height: 839px;
+  box-sizing: border-box;
 }
 
 .navigator {
@@ -367,7 +368,7 @@ body {
 .subscribe {
   height: 448px;
   box-sizing: border-box;
-  background: url(../img/landscape.jpg) no-repeat;
+  background: url(../img/landscape.png) no-repeat;
   background-size: cover;
 }
 
@@ -538,10 +539,10 @@ body {
     height: 442px;
   }
   .top {
-    height: 368px;
+    height: 367px;
   }
   .top__content {
-    height: 368px;
+    height: 367px;
   }
   .image {
     width: auto;
@@ -676,10 +677,10 @@ body {
     display: none;
   }
   .top {
-    height: 363px;
+    height: 362px;
   }
   .top__content {
-    height: 363px;
+    height: 362px;
   }
   .border {
     padding-left: 15px;
