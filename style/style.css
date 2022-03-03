@@ -310,11 +310,11 @@ body {
   display: inline-block;
   font-size: 16px;
   line-height: 19px;
-  color: #f26376;
+  color: #f16d7f;
   width: 211px;
   text-align: center;
   padding: 14px;
-  border: 1px solid #ff6a6a;
+  border: 1px solid #f16d7f;
   margin-top: 49px;
   text-decoration: none;
   align-self: center;
@@ -322,7 +322,7 @@ body {
 
 .content__button:hover {
   text-decoration: none;
-  background: #ff6a6a;
+  background: #f16d7f;
   color: #ffffff;
 }
 
@@ -407,38 +407,6 @@ body {
   gap: 30px;
 }
 
-.men-clothing .card > img {
-  display: block;
-  width: 100%;
-}
-
-.men-clothing .description {
-  background: #f8f8f8;
-  padding: 25px 17px 20px;
-}
-
-.men-clothing .description > h2 {
-  font-size: 13px;
-  line-height: 16px;
-  color: #000000;
-  font-weight: normal;
-}
-
-.men-clothing .description > p {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #5d5d5d;
-  padding: 13px 0 18px;
-}
-
-.men-clothing .description > span {
-  color: #f16d7f;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-}
-
 .pagination {
   width: 283px;
   height: 43px;
@@ -504,6 +472,151 @@ body {
   color: #fbfbfb;
   padding-top: 16px;
   width: 360px;
+}
+
+.slider {
+  height: 777px;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eaeaea;
+}
+
+.slider__photo {
+  height: 700px;
+  width: 597px;
+  align-self: flex-start;
+  margin-top: 11px;
+  background-image: url(../img/slider.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider__arrow {
+  width: 47px;
+  height: 47px;
+  background: rgba(42, 42, 42, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slider__arrow__link {
+  width: 12px;
+  height: 22px;
+  display: block;
+}
+
+.slider__arrow .link__back {
+  display: none;
+  position: absolute;
+}
+
+.slider__arrow:hover .link__back {
+  display: block;
+}
+
+.women-collection {
+  height: 601px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -65px;
+  margin-bottom: 129px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.women-collection .coll__headering {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+  margin-top: 65px;
+}
+
+.women-collection .line {
+  width: 63px;
+  height: 3px;
+  background: #f16d7f;
+  border: none;
+  margin: 12px auto;
+}
+
+.women-collection .coll__moschino {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4d4d4d;
+  margin-bottom: 48px;
+}
+
+.women-collection .coll__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5e5e5e;
+  width: 555px;
+}
+
+.women-collection .coll__cost {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+  margin: 32px auto 65px;
+}
+
+.women-collection .line__grey {
+  width: 641px;
+  border: 1px solid #eaeaea;
+  background: #eaeaea;
+  margin-bottom: 65px;
+}
+
+.women-collection .coll__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.women-collection .coll__nav .filter__img {
+  margin-right: 23px;
+}
+
+.women-collection .coll__button {
+  width: 211px;
+  height: 48px;
+  box-sizing: border-box;
+  border: 1px solid #f16d7f;
+  background-color: #fff;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 49px;
+}
+
+.women-collection .button_img {
+  width: 26px;
+  height: 24px;
+  margin-right: 23px;
+  position: relative;
+}
+
+.goods {
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
+  column-gap: 30px;
+  margin-bottom: 128px;
 }
 
 .subscribe {
@@ -629,7 +742,7 @@ body {
   color: #fbfbfb;
   display: flex;
   align-items: center;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -657,10 +770,9 @@ body {
 .footer .white__img {
   display: none;
   width: inherit;
+  height: inherit;
   background: #f16d7f;
   position: absolute;
-  width: inherit;
-  height: inherit;
   text-align: center;
   vertical-align: middle;
 }
@@ -767,7 +879,7 @@ body {
     gap: 16px;
     grid-template: repeat(4, 1fr)/1fr 1fr;
   }
-  .men-clothing .card__3 {
+  .men-clothing .item_3 {
     display: none;
   }
   .pagination {
@@ -781,6 +893,28 @@ body {
     gap: 48px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+  }
+  .slider {
+    height: 624px;
+  }
+  .slider__photo {
+    height: 565px;
+    width: 466px;
+    align-self: center;
+    margin-top: 0;
+  }
+  .women-collection {
+    height: 601px;
+    margin-top: 0px;
+    border-top: 0;
+  }
+  .goods {
+    grid-template: 1fr/repeat(2, 1fr);
+    column-gap: 16px;
+    margin-bottom: 128px;
+  }
+  .goods .item__6 {
+    display: none;
   }
   .subscribe {
     height: 614px;
@@ -960,9 +1094,6 @@ body {
     row-gap: 16px;
     column-gap: 8px;
   }
-  .men-clothing .card__3 {
-    display: none;
-  }
   .pagination {
     margin: 40px auto 65px;
   }
@@ -973,6 +1104,62 @@ body {
   }
   .aboutUs .info__text {
     padding-top: 15px;
+  }
+  .slider {
+    height: 624px;
+  }
+  .slider__photo {
+    height: 454px;
+    width: 374px;
+    align-self: center;
+    margin-top: 0;
+  }
+  .women-collection {
+    height: 600px;
+    margin-top: 0px;
+    margin-bottom: 64px;
+    border-top: 0;
+  }
+  .women-collection .coll__moschino {
+    margin-bottom: 32px;
+  }
+  .women-collection .coll__text {
+    line-height: 20px;
+    width: 326px;
+  }
+  .women-collection .coll__cost {
+    font-size: 24px;
+    line-height: 31px;
+    margin: 32px auto 32px;
+  }
+  .women-collection .line__grey {
+    width: 175px;
+    margin-bottom: 50px;
+  }
+  .women-collection .coll__nav {
+    display: flex;
+  }
+  .women-collection .coll__nav .coll__size {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .women-collection .coll__nav .filter__img {
+    margin-right: 25px;
+  }
+  .women-collection .coll__button {
+    margin-top: 65px;
+  }
+  .goods {
+    grid-template: 1fr 1fr / 1fr;
+    column-gap: 0;
+    row-gap: 16px;
+    margin-bottom: 128px;
+  }
+  .goods .item__6 {
+    display: block;
+  }
+  .goods .item__3 {
+    display: none;
   }
   .subscribe {
     height: 550px;

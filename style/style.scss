@@ -1,4 +1,5 @@
 $color: #f16d7f;
+$bgc: #f16d7f;
 
 * {
   margin: 0;
@@ -51,7 +52,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #f16d7f;
+        background: $bgc;
         border-radius: 50px;
         text-align: center;
         font-size: 12px;
@@ -94,7 +95,7 @@ body {
 .border {
   padding-left: 16px;
   margin-left: 64px;
-  border-left: 12px solid #f16d7f;
+  border-left: 12px solid $color;
 }
 .brand__text {
   width: 392px;
@@ -302,11 +303,11 @@ body {
   display: inline-block;
   font-size: 16px;
   line-height: 19px;
-  color: #f26376;
+  color: $color;
   width: 211px;
   text-align: center;
   padding: 14px;
-  border: 1px solid #ff6a6a;
+  border: 1px solid $color;
   margin-top: 49px;
   text-decoration: none;
   align-self: center;
@@ -314,7 +315,7 @@ body {
 
 .content__button:hover {
   text-decoration: none;
-  background: #ff6a6a;
+  background: $bgc;
   color: #ffffff;
 }
 
@@ -388,35 +389,6 @@ body {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   gap: 30px;
-
-  .card > img {
-    display: block;
-    width: 100%;
-  }
-
-  .description {
-    background: #f8f8f8;
-    padding: 25px 17px 20px;
-  }
-  .description > h2 {
-    font-size: 13px;
-    line-height: 16px;
-    color: #000000;
-    font-weight: normal;
-  }
-  .description > p {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #5d5d5d;
-    padding: 13px 0 18px;
-  }
-  .description > span {
-    color: $color;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-  }
 }
 .pagination {
   width: 283px;
@@ -481,6 +453,135 @@ body {
       }
     }
   }
+}
+.slider {
+  height: 777px;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eaeaea;
+
+  &__photo {
+    height: 700px;
+    width: 597px;
+    align-self: flex-start;
+    margin-top: 11px;
+    background-image: url(../img/slider.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &__arrow {
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &__link {
+      width: 12px;
+      height: 22px;
+      display: block;
+    }
+    .link__back {
+      display: none;
+      position: absolute;
+    }
+    &:hover .link__back {
+      display: block;
+    }
+  }
+}
+.women-collection {
+  height: 601px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -65px;
+  margin-bottom: 129px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+
+  .coll__headering {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color;
+    margin-top: 65px;
+  }
+  .line {
+    width: 63px;
+    height: 3px;
+    background: $bgc;
+    border: none;
+    margin: 12px auto;
+  }
+  .coll__moschino {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4d4d4d;
+    margin-bottom: 48px;
+  }
+  .coll__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5e5e5e;
+    width: 555px;
+  }
+  .coll__cost {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color;
+    margin: 32px auto 65px;
+  }
+  .line__grey {
+    width: 641px;
+    border: 1px solid #eaeaea;
+    background: #eaeaea;
+    margin-bottom: 65px;
+  }
+  .coll__nav {
+    display: flex;
+    justify-content: center;
+    .filter__img {
+      margin-right: 23px;
+    }
+  }
+  .coll__button {
+    width: 211px;
+    height: 48px;
+    box-sizing: border-box;
+    border: 1px solid $color;
+    background-color: #fff;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 49px;
+  }
+  .button_img {
+    width: 26px;
+    height: 24px;
+    margin-right: 23px;
+    position: relative;
+  }
+}
+.goods {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  column-gap: 30px;
+  margin-bottom: 128px;
 }
 
 .subscribe {
@@ -598,7 +699,7 @@ body {
     color: #fbfbfb;
     display: flex;
     align-items: center;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: normal;
   }
@@ -624,10 +725,9 @@ body {
   .white__img {
     display: none;
     width: inherit;
-    background: #f16d7f;
-    position: absolute;
-    width: inherit;
     height: inherit;
+    background: $bgc;
+    position: absolute;
     text-align: center;
     vertical-align: middle;
   }
@@ -737,7 +837,7 @@ body {
     gap: 16px;
     grid-template: repeat(4, 1fr) / 1fr 1fr;
 
-    .card__3 {
+    .item_3 {
       display: none;
     }
   }
@@ -752,6 +852,29 @@ body {
       gap: 48px;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  .slider {
+    height: 624px;
+    &__photo {
+      height: 565px;
+      width: 466px;
+      align-self: center;
+      margin-top: 0;
+    }
+  }
+
+  .women-collection {
+    height: 601px;
+    margin-top: 0px;
+    border-top: 0;
+  }
+  .goods {
+    grid-template: 1fr / repeat(2, 1fr);
+    column-gap: 16px;
+    margin-bottom: 128px;
+    .item__6 {
+      display: none;
     }
   }
   .subscribe {
@@ -941,14 +1064,11 @@ body {
     grid-template: 1fr/1fr;
     row-gap: 16px;
     column-gap: 8px;
-
-    .card__3 {
-      display: none;
-    }
   }
   .pagination {
     margin: 40px auto 65px;
   }
+
   .aboutUs {
     gap: 47px;
     grid-template-columns: 1fr;
@@ -958,6 +1078,64 @@ body {
       padding-top: 15px;
     }
   }
+  .slider {
+    height: 624px;
+    &__photo {
+      height: 454px;
+      width: 374px;
+      align-self: center;
+      margin-top: 0;
+    }
+  }
+  .women-collection {
+    height: 600px;
+    margin-top: 0px;
+    margin-bottom: 64px;
+    border-top: 0;
+    .coll__moschino {
+      margin-bottom: 32px;
+    }
+    .coll__text {
+      line-height: 20px;
+      width: 326px;
+    }
+    .coll__cost {
+      font-size: 24px;
+      line-height: 31px;
+      margin: 32px auto 32px;
+    }
+    .line__grey {
+      width: 175px;
+      margin-bottom: 50px;
+    }
+    .coll__nav {
+      display: flex;
+
+      .coll__size {
+        font-size: 10px;
+        line-height: 12px;
+      }
+      .filter__img {
+        margin-right: 25px;
+      }
+    }
+    .coll__button {
+      margin-top: 65px;
+    }
+  }
+  .goods {
+    grid-template: 1fr 1fr / 1fr;
+    column-gap: 0;
+    row-gap: 16px;
+    margin-bottom: 128px;
+    .item__6 {
+      display: block;
+    }
+    .item__3 {
+      display: none;
+    }
+  }
+
   .subscribe {
     height: 550px;
   }
