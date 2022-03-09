@@ -25,16 +25,16 @@ body {
   box-sizing: border-box;
 }
 
-.navigator .nav {
+.nav {
   display: flex;
   justify-content: space-between;
 }
 
-.navigator .logo {
+.logo {
   margin-right: 41px;
 }
 
-.navigator .rightNav {
+.rightNav {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -42,16 +42,16 @@ body {
   margin-right: 10px;
 }
 
-.navigator .rightNav .menu__right {
+.menuRight {
   margin-right: 33px;
 }
 
-.navigator .rightNav .menu__bascket {
+.menuBasket {
   display: inline;
   position: relative;
 }
 
-.navigator .rightNav .menu__bascket .circle {
+.circle {
   height: 19px;
   width: 19px;
   display: flex;
@@ -233,22 +233,22 @@ body {
   gap: 30px;
 }
 
-.item {
+.b-item {
   background-color: #f8f8f8;
   box-sizing: border-box;
 }
 
-.item__image {
+.b-item__image {
   display: flex;
   position: relative;
 }
 
-.block__image {
+.b-item__front {
   display: block;
   width: 100%;
 }
 
-.back__image {
+.b-item__back {
   display: none;
   justify-content: center;
   align-items: center;
@@ -258,7 +258,7 @@ body {
   width: 100%;
 }
 
-.button {
+.b-item__button {
   display: flex;
   background: none;
   padding: 10px;
@@ -270,23 +270,23 @@ body {
   color: #ffffff;
 }
 
-.button img {
+.b-item__button img {
   width: 26px;
   height: 24px;
   padding-right: 11px;
 }
 
-.padding {
+.b-item__description {
   padding: 24px 17px 20px 17px;
 }
 
-.card__headering {
+.b-item__headering {
   font-size: 13px;
   line-height: 16px;
   color: #000000;
 }
 
-.card__text {
+.b-item__text {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -294,7 +294,7 @@ body {
   padding-top: 13px;
 }
 
-.card__cost {
+.b-item__cost {
   padding-top: 18px;
   color: #f16d7f;
   font-weight: normal;
@@ -302,7 +302,7 @@ body {
   line-height: 19px;
 }
 
-.item:hover .back__image {
+.b-item:hover .b-item__back {
   display: flex;
 }
 
@@ -373,22 +373,22 @@ body {
   padding: 51px 0 64px;
 }
 
-.filter__left {
+.filterLeft {
   margin-right: 319px;
 }
 
-.filter__right {
+.filterRight {
   display: flex;
 }
 
-.filter__text {
+.filterText {
   font-size: 14px;
   line-height: 17px;
   color: #6f6e6e;
   margin-right: 10px;
 }
 
-.filter__text_left {
+.filterText_left {
   color: #000000;
   font-weight: bold;
 }
@@ -397,7 +397,7 @@ body {
   margin-bottom: 2px;
 }
 
-.filter .filter__img {
+.filterImg {
   margin-right: 28px;
 }
 
@@ -510,28 +510,31 @@ body {
   display: block;
 }
 
-.slider__arrow .link__back {
+.slider__arrow .linkBack {
   display: none;
   position: absolute;
 }
 
-.slider__arrow:hover .link__back {
+.slider__arrow:hover .linkBack {
   display: block;
 }
 
-.women-collection {
+.b-wCollection {
   height: 601px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -65px;
-  margin-bottom: 129px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
 }
 
-.women-collection .coll__headering {
+.b-wCollection_margin {
+  margin-top: -65px;
+  margin-bottom: 129px;
+}
+
+.b-wCollection__header {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -539,7 +542,7 @@ body {
   margin-top: 65px;
 }
 
-.women-collection .line {
+.b-wCollection .line {
   width: 63px;
   height: 3px;
   background: #f16d7f;
@@ -547,7 +550,7 @@ body {
   margin: 12px auto;
 }
 
-.women-collection .coll__moschino {
+.b-wCollection__moschino {
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
@@ -555,7 +558,7 @@ body {
   margin-bottom: 48px;
 }
 
-.women-collection .coll__text {
+.b-wCollection__text {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -563,7 +566,7 @@ body {
   width: 555px;
 }
 
-.women-collection .coll__cost {
+.b-wCollection__cost {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -571,23 +574,23 @@ body {
   margin: 32px auto 65px;
 }
 
-.women-collection .line__grey {
+.b-wCollection .line__grey {
   width: 641px;
   border: 1px solid #eaeaea;
   background: #eaeaea;
   margin-bottom: 65px;
 }
 
-.women-collection .coll__nav {
+.b-wCollection__nav {
   display: flex;
   justify-content: center;
 }
 
-.women-collection .coll__nav .filter__img {
+.b-wCollection__nav .filter__img {
   margin-right: 23px;
 }
 
-.women-collection .coll__button {
+.b-wCollection__button {
   width: 211px;
   height: 48px;
   box-sizing: border-box;
@@ -605,7 +608,7 @@ body {
   margin-top: 49px;
 }
 
-.women-collection .button_img {
+.b-wCollection .buttonImg {
   width: 26px;
   height: 24px;
   margin-right: 23px;
@@ -656,7 +659,7 @@ body {
   padding-top: 150px;
 }
 
-.subscribe .subscribe__text {
+.subscribe .promotion__text {
   font-size: 18px;
   text-align: center;
   color: #222224;
@@ -665,7 +668,7 @@ body {
   line-height: 30px;
 }
 
-.subscribe .text__bold {
+.subscribe .promotion__text_bold {
   font-weight: 700;
   font-size: 24px;
   line-height: 37px;
@@ -707,7 +710,7 @@ body {
   font-family: inherit;
 }
 
-.subscribe .button__subscribe {
+.subscribe .promotion__button {
   background: #f16d7f;
   width: 100px;
   height: 49px;
@@ -753,7 +756,7 @@ body {
   align-items: center;
 }
 
-.footer .black__img {
+.footer .blackImg {
   display: flex;
   width: 32px;
   height: 32px;
@@ -763,11 +766,11 @@ body {
   align-items: center;
 }
 
-.footer .black__img_margin {
+.footer .blackImg_margin {
   margin-right: 7px;
 }
 
-.footer .white__img {
+.footer .whiteImg {
   display: none;
   width: inherit;
   height: inherit;
@@ -777,16 +780,17 @@ body {
   vertical-align: middle;
 }
 
-.footer .black__img:hover .white__img {
+.footer .blackImg:hover .whiteImg {
   display: block;
 }
 
-.footer .white__img > a {
+.footer .whiteImg > a {
   display: block;
   line-height: 32px;
   text-decoration: none;
 }
 
+/* @media (max-width: 1024px)*/
 @media (max-width: 1024px) {
   .container {
     padding-left: 16px;
@@ -858,10 +862,10 @@ body {
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
     gap: 16px;
   }
-  .item:hover .back__image {
+  .b-item:hover .b-item__back {
     display: flex;
   }
-  .item__image {
+  .b-item__image {
     justify-content: center;
   }
   .content__button {
@@ -872,14 +876,14 @@ body {
     padding-top: 24px;
     padding-bottom: 40px;
   }
-  .filter__left {
+  .filterLeft {
     margin-right: 0px;
   }
   .men-clothing {
     gap: 16px;
     grid-template: repeat(4, 1fr)/1fr 1fr;
   }
-  .men-clothing .item_3 {
+  .men-clothing__3 {
     display: none;
   }
   .pagination {
@@ -903,17 +907,28 @@ body {
     align-self: center;
     margin-top: 0;
   }
-  .women-collection {
+  .b-wCollection {
     height: 601px;
-    margin-top: 0px;
     border-top: 0;
+  }
+  .b-wCollection_margin {
+    margin-top: 0px;
   }
   .goods {
     grid-template: 1fr/repeat(2, 1fr);
     column-gap: 16px;
     margin-bottom: 128px;
   }
-  .goods .item__6 {
+  .goods__1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .goods__2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+  }
+  .goods__3 {
     display: none;
   }
   .subscribe {
@@ -935,17 +950,18 @@ body {
     padding-top: 0;
   }
   .subscribe__content .input,
-  .subscribe__content .button__subscribe {
+  .subscribe__content .promotion__button {
     margin-top: 27px;
   }
   .footer__left {
     margin-left: 16px;
   }
-  .margin_mobile {
+  .mobile {
     margin-right: 7px;
   }
 }
 
+/*@media (min-width: 320px) and (max-width: 667px)*/
 @media (min-width: 320px) and (max-width: 667px) {
   .container {
     padding-left: 8px;
@@ -957,13 +973,13 @@ body {
   .rightNav {
     margin-right: 0;
   }
-  .menu__right {
+  .menuRight {
     margin-right: 0;
   }
   .contacts {
     display: none;
   }
-  .menu__bascket {
+  .menuBasket {
     display: none;
   }
   .top {
@@ -1041,11 +1057,11 @@ body {
     grid-template: repeat(6, 1fr)/1fr;
     gap: 16px;
   }
-  .item__image {
+  .b-item__image {
     display: flex;
     justify-content: center;
   }
-  .item:hover .back__image {
+  .b-item:hover .b-item__back {
     display: flex;
   }
   .content__button {
@@ -1065,28 +1081,28 @@ body {
     padding-top: 24px;
     padding-bottom: 32px;
   }
-  .filter__left {
+  .filterLeft {
     margin-right: 0px;
   }
-  .filter__left > img {
+  .filterLeft > img {
     width: 38px;
     height: 25px;
   }
-  .filter__text {
+  .filterText {
     font-size: 12px;
     line-height: 14px;
     margin-right: 8px;
   }
-  .filter__text_left {
+  .filterText_left {
     display: none;
   }
-  .filter__right {
+  .filterRight {
     padding-bottom: 9px;
   }
   .filter .trending > img {
     margin-bottom: 1px;
   }
-  .filter .filter__img {
+  .filterImg {
     margin-right: 24px;
   }
   .men-clothing {
@@ -1114,39 +1130,41 @@ body {
     align-self: center;
     margin-top: 0;
   }
-  .women-collection {
+  .b-wCollection {
     height: 600px;
-    margin-top: 0px;
-    margin-bottom: 64px;
     border-top: 0;
   }
-  .women-collection .coll__moschino {
+  .b-wCollection_margin {
+    margin-top: 0px;
+    margin-bottom: 64px;
+  }
+  .b-wCollection__moschino {
     margin-bottom: 32px;
   }
-  .women-collection .coll__text {
+  .b-wCollection__text {
     line-height: 20px;
     width: 326px;
   }
-  .women-collection .coll__cost {
+  .b-wCollection__cost {
     font-size: 24px;
     line-height: 31px;
     margin: 32px auto 32px;
   }
-  .women-collection .line__grey {
+  .b-wCollection .line__grey {
     width: 175px;
     margin-bottom: 50px;
   }
-  .women-collection .coll__nav {
+  .b-wCollection__nav {
     display: flex;
   }
-  .women-collection .coll__nav .coll__size {
+  .b-wCollection__nav .b-wCollection__size {
     font-size: 10px;
     line-height: 12px;
   }
-  .women-collection .coll__nav .filter__img {
+  .b-wCollection__nav .filterImg {
     margin-right: 25px;
   }
-  .women-collection .coll__button {
+  .b-wCollection__button {
     margin-top: 65px;
   }
   .goods {
@@ -1155,11 +1173,15 @@ body {
     row-gap: 16px;
     margin-bottom: 128px;
   }
-  .goods .item__6 {
-    display: block;
+  .goods__1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
   }
-  .goods .item__3 {
+  .goods__2 {
     display: none;
+  }
+  .goods__3 {
+    display: block;
   }
   .subscribe {
     height: 550px;
@@ -1187,13 +1209,13 @@ body {
     flex-direction: column;
     padding-top: 0px;
   }
-  .promotion .subscribe__text {
+  .promotion__text {
     font-size: 14px;
     max-width: 271px;
     line-height: 22px;
     text-align: center;
   }
-  .promotion .text__bold {
+  .promotion .promotion__text_bold {
     font-weight: 700;
     font-size: 24px;
     line-height: 37px;
@@ -1209,7 +1231,7 @@ body {
     border-bottom-left-radius: 28px;
     margin-top: 22px;
   }
-  .promotion > form .button__subscribe {
+  .promotion > form .promotion__button {
     width: 97px;
     height: 47px;
     border-top-right-radius: 28px;

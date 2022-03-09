@@ -24,47 +24,47 @@ body {
   padding-top: 18px;
   padding-bottom: 19px;
   box-sizing: border-box;
-
-  .nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  .logo {
-    margin-right: 41px;
-  }
-  .rightNav {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    list-style-type: none;
-    margin-right: 10px;
-
-    .menu__right {
-      margin-right: 33px;
-    }
-    .menu__bascket {
-      display: inline;
-      position: relative;
-
-      .circle {
-        height: 19px;
-        width: 19px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: $bgc;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 12px;
-        line-height: 14px;
-        color: #ffffff;
-        position: absolute;
-        right: -9px;
-        top: -9px;
-      }
-    }
-  }
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  margin-right: 41px;
+}
+.rightNav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.menuRight {
+  margin-right: 33px;
+}
+.menuBasket {
+  display: inline;
+  position: relative;
+}
+
+.circle {
+  height: 19px;
+  width: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bgc;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  position: absolute;
+  right: -9px;
+  top: -9px;
+}
+
 .top {
   height: 764px;
   background: #f1e4e6;
@@ -226,22 +226,22 @@ body {
   gap: 30px;
 }
 
-.item {
+.b-item {
   background-color: #f8f8f8;
   box-sizing: border-box;
 }
 
-.item__image {
+.b-item__image {
   display: flex;
   position: relative;
 }
 
-.block__image {
+.b-item__front {
   display: block;
   width: 100%;
 }
 
-.back__image {
+.b-item__back {
   display: none;
   justify-content: center;
   align-items: center;
@@ -251,7 +251,7 @@ body {
   width: 100%;
 }
 
-.button {
+.b-item__button {
   display: flex;
   background: none;
   padding: 10px;
@@ -263,23 +263,23 @@ body {
   color: #ffffff;
 }
 
-.button img {
+.b-item__button img {
   width: 26px;
   height: 24px;
   padding-right: 11px;
 }
 
-.padding {
+.b-item__description {
   padding: 24px 17px 20px 17px;
 }
 
-.card__headering {
+.b-item__headering {
   font-size: 13px;
   line-height: 16px;
   color: #000000;
 }
 
-.card__text {
+.b-item__text {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -287,7 +287,7 @@ body {
   padding-top: 13px;
 }
 
-.card__cost {
+.b-item__cost {
   padding-top: 18px;
   color: $color;
   font-weight: normal;
@@ -295,7 +295,7 @@ body {
   line-height: 19px;
 }
 
-.item:hover .back__image {
+.b-item:hover .b-item__back {
   display: flex;
 }
 
@@ -361,26 +361,26 @@ body {
   align-items: center;
   padding: 51px 0 64px;
 
-  &__left {
+  &Left {
     margin-right: 319px;
   }
-  &__right {
+  &Right {
     display: flex;
   }
-  &__text {
+  &Text {
     font-size: 14px;
     line-height: 17px;
     color: #6f6e6e;
     margin-right: 10px;
   }
-  &__text_left {
+  &Text_left {
     color: #000000;
     font-weight: bold;
   }
   .trending > img {
     margin-bottom: 2px;
   }
-  .filter__img {
+  &Img {
     margin-right: 28px;
   }
 }
@@ -485,27 +485,29 @@ body {
       height: 22px;
       display: block;
     }
-    .link__back {
+    .linkBack {
       display: none;
       position: absolute;
     }
-    &:hover .link__back {
+    &:hover .linkBack {
       display: block;
     }
   }
 }
-.women-collection {
+.b-wCollection {
   height: 601px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -65px;
-  margin-bottom: 129px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
+  &_margin {
+    margin-top: -65px;
+    margin-bottom: 129px;
+  }
 
-  .coll__headering {
+  &__header {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -519,21 +521,21 @@ body {
     border: none;
     margin: 12px auto;
   }
-  .coll__moschino {
+  &__moschino {
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
     color: #4d4d4d;
     margin-bottom: 48px;
   }
-  .coll__text {
+  &__text {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: #5e5e5e;
     width: 555px;
   }
-  .coll__cost {
+  &__cost {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -546,14 +548,14 @@ body {
     background: #eaeaea;
     margin-bottom: 65px;
   }
-  .coll__nav {
+  &__nav {
     display: flex;
     justify-content: center;
     .filter__img {
       margin-right: 23px;
     }
   }
-  .coll__button {
+  &__button {
     width: 211px;
     height: 48px;
     box-sizing: border-box;
@@ -570,7 +572,7 @@ body {
     align-items: center;
     margin-top: 49px;
   }
-  .button_img {
+  .buttonImg {
     width: 26px;
     height: 24px;
     margin-right: 23px;
@@ -616,7 +618,7 @@ body {
   .promotion {
     padding-top: 150px;
   }
-  .subscribe__text {
+  .promotion__text {
     font-size: 18px;
     text-align: center;
     color: #222224;
@@ -625,7 +627,7 @@ body {
     line-height: 30px;
   }
 
-  .text__bold {
+  .promotion__text_bold {
     font-weight: 700;
     font-size: 24px;
     line-height: 37px;
@@ -664,7 +666,7 @@ body {
     font-family: inherit;
   }
 
-  .button__subscribe {
+  .promotion__button {
     background: #f16d7f;
     width: 100px;
     height: 49px;
@@ -710,7 +712,7 @@ body {
     align-items: center;
   }
 
-  .black__img {
+  .blackImg {
     display: flex;
     width: 32px;
     height: 32px;
@@ -719,10 +721,10 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .black__img_margin {
+  .blackImg_margin {
     margin-right: 7px;
   }
-  .white__img {
+  .whiteImg {
     display: none;
     width: inherit;
     height: inherit;
@@ -732,16 +734,18 @@ body {
     vertical-align: middle;
   }
 
-  .black__img:hover .white__img {
+  .blackImg:hover .whiteImg {
     display: block;
   }
 
-  .white__img > a {
+  .whiteImg > a {
     display: block;
     line-height: 32px;
     text-decoration: none;
   }
 }
+
+/* @media (max-width: 1024px)*/
 
 @media (max-width: 1024px) {
   .container {
@@ -814,10 +818,10 @@ body {
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     gap: 16px;
   }
-  .item:hover .back__image {
+  .b-item:hover .b-item__back {
     display: flex;
   }
-  .item__image {
+  .b-item__image {
     justify-content: center;
   }
   .content__button {
@@ -829,7 +833,7 @@ body {
     padding-top: 24px;
     padding-bottom: 40px;
 
-    &__left {
+    &Left {
       margin-right: 0px;
     }
   }
@@ -837,7 +841,7 @@ body {
     gap: 16px;
     grid-template: repeat(4, 1fr) / 1fr 1fr;
 
-    .item_3 {
+    &__3 {
       display: none;
     }
   }
@@ -864,16 +868,27 @@ body {
     }
   }
 
-  .women-collection {
+  .b-wCollection {
     height: 601px;
-    margin-top: 0px;
     border-top: 0;
+    &_margin {
+      margin-top: 0px;
+    }
   }
   .goods {
     grid-template: 1fr / repeat(2, 1fr);
     column-gap: 16px;
     margin-bottom: 128px;
-    .item__6 {
+    &__1 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    &__2 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+    }
+    &__3 {
       display: none;
     }
   }
@@ -898,7 +913,7 @@ body {
       }
 
       .input,
-      .button__subscribe {
+      .promotion__button {
         margin-top: 27px;
       }
     }
@@ -907,10 +922,12 @@ body {
     margin-left: 16px;
   }
 
-  .margin_mobile {
+  .mobile {
     margin-right: 7px;
   }
 }
+
+/*@media (min-width: 320px) and (max-width: 667px)*/
 
 @media (min-width: 320px) and (max-width: 667px) {
   .container {
@@ -923,13 +940,13 @@ body {
   .rightNav {
     margin-right: 0;
   }
-  .menu__right {
+  .menuRight {
     margin-right: 0;
   }
   .contacts {
     display: none;
   }
-  .menu__bascket {
+  .menuBasket {
     display: none;
   }
   .top {
@@ -1007,11 +1024,11 @@ body {
     grid-template: repeat(6, 1fr) / 1fr;
     gap: 16px;
   }
-  .item__image {
+  .b-item__image {
     display: flex;
     justify-content: center;
   }
-  .item:hover .back__image {
+  .b-item:hover .b-item__back {
     display: flex;
   }
   .content__button {
@@ -1034,29 +1051,29 @@ body {
     padding-top: 24px;
     padding-bottom: 32px;
 
-    &__left {
+    &Left {
       margin-right: 0px;
     }
-    &__left > img {
+    &Left > img {
       width: 38px;
       height: 25px;
     }
 
-    &__text {
+    &Text {
       font-size: 12px;
       line-height: 14px;
       margin-right: 8px;
     }
-    &__text_left {
+    &Text_left {
       display: none;
     }
-    &__right {
+    &Right {
       padding-bottom: 9px;
     }
     .trending > img {
       margin-bottom: 1px;
     }
-    .filter__img {
+    &Img {
       margin-right: 24px;
     }
   }
@@ -1087,19 +1104,21 @@ body {
       margin-top: 0;
     }
   }
-  .women-collection {
+  .b-wCollection {
     height: 600px;
-    margin-top: 0px;
-    margin-bottom: 64px;
     border-top: 0;
-    .coll__moschino {
+    &_margin {
+      margin-top: 0px;
+      margin-bottom: 64px;
+    }
+    &__moschino {
       margin-bottom: 32px;
     }
-    .coll__text {
+    &__text {
       line-height: 20px;
       width: 326px;
     }
-    .coll__cost {
+    &__cost {
       font-size: 24px;
       line-height: 31px;
       margin: 32px auto 32px;
@@ -1108,18 +1127,18 @@ body {
       width: 175px;
       margin-bottom: 50px;
     }
-    .coll__nav {
+    &__nav {
       display: flex;
 
-      .coll__size {
+      .b-wCollection__size {
         font-size: 10px;
         line-height: 12px;
       }
-      .filter__img {
+      .filterImg {
         margin-right: 25px;
       }
     }
-    .coll__button {
+    &__button {
       margin-top: 65px;
     }
   }
@@ -1128,11 +1147,15 @@ body {
     column-gap: 0;
     row-gap: 16px;
     margin-bottom: 128px;
-    .item__6 {
-      display: block;
+    &__1 {
+      grid-column-start: 1;
+      grid-column-end: 1;
     }
-    .item__3 {
+    &__2 {
       display: none;
+    }
+    &__3 {
+      display: block;
     }
   }
 
@@ -1165,14 +1188,14 @@ body {
     flex-direction: column;
     padding-top: 0px;
 
-    .subscribe__text {
+    &__text {
       font-size: 14px;
       max-width: 271px;
       line-height: 22px;
       text-align: center;
     }
 
-    .text__bold {
+    .promotion__text_bold {
       font-weight: 700;
       font-size: 24px;
       line-height: 37px;
@@ -1188,7 +1211,7 @@ body {
         border-bottom-left-radius: 28px;
         margin-top: 22px;
       }
-      .button__subscribe {
+      .promotion__button {
         width: 97px;
         height: 47px;
         border-top-right-radius: 28px;
