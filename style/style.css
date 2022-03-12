@@ -622,6 +622,234 @@ body {
   margin-bottom: 128px;
 }
 
+/*page Cart*/
+.shopingCart {
+  height: 148px;
+  background-color: #f8f3f4;
+}
+
+.shopingCart__header {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+  line-height: 148px;
+}
+
+.yourBasket {
+  padding-top: 96px;
+  padding-bottom: 129px;
+  display: flex;
+}
+
+.card {
+  width: 652px;
+}
+
+.cardTop {
+  height: 306px;
+  background: white;
+  display: flex;
+  filter: drop-shadow(8px 8px 21px rgba(0, 0, 0, 0.13));
+}
+
+.cardTop_margin {
+  margin-bottom: 40px;
+}
+
+.cardImage {
+  height: inherit;
+}
+
+.cardText {
+  width: 390px;
+  box-sizing: border-box;
+  padding: 22px 22px 22px 31px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  position: relative;
+}
+
+.cardText > h2 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  padding-bottom: 42px;
+  font-weight: inherit;
+  width: 262px;
+}
+
+.cardText > p {
+  padding-top: 6px;
+}
+
+.cardText .cardPrice {
+  padding-top: 0;
+}
+
+.cardCost {
+  color: #f16d7f;
+}
+
+.cardInput {
+  width: 43px;
+  height: 24px;
+  border: 1px solid #eaeaea;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+  text-align: center;
+  margin-left: 25px;
+}
+
+.cardClose {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+}
+
+.cardBtn {
+  margin-top: 72px;
+  height: 49px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardBtn__all {
+  padding: 16px 40px;
+  border: 1px solid #a4a4a4;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  font-style: normal;
+  font-family: inherit;
+  text-align: center;
+  color: #000000;
+  background-color: #fff;
+}
+
+.resulShopping {
+  width: 360px;
+  padding-left: 128px;
+}
+
+.resulShopping .adress {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.resulShopping .productData {
+  display: flex;
+  flex-direction: column;
+}
+
+.resulShopping .productData > input {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  height: 45px;
+  padding-left: 17px;
+  margin-top: 21px;
+}
+
+.resulShopping .productData .input::-webkit-input-placeholder {
+  color: #222222;
+  font-family: inherit;
+}
+
+.resulShopping .productData .input::-moz-placeholder {
+  color: #222222;
+  font-family: inherit;
+}
+
+.resulShopping .productData .input:-ms-input-placeholder {
+  color: #222222;
+  font-family: inherit;
+}
+
+.resulShopping .productData .input:-moz-placeholder {
+  color: #222222;
+  font-family: inherit;
+}
+
+.resulShopping .productData > button {
+  height: 34px;
+  width: 100px;
+  margin-top: 24px;
+  margin-bottom: 58px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  font-family: inherit;
+  color: #4a4a4a;
+  background-color: #fff;
+  border: 1px solid #a4a4a4;
+}
+
+.resulShopping .sumTotal {
+  height: 214px;
+  background-color: #f8f3f4;
+  padding-top: 39px;
+  box-sizing: border-box;
+}
+
+.resulShopping .sumTotal .summa {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4a4a4a;
+  text-align: end;
+  margin-right: 34px;
+}
+
+.resulShopping .sumTotal .summa > span {
+  padding-left: 20px;
+}
+
+.resulShopping .sumTotal .grandTotal {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-align: end;
+  margin: 12px 34px 21px auto;
+}
+
+.resulShopping .sumTotal .grandTotal > span {
+  color: #f16d7f;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.resulShopping .sumTotal > hr {
+  width: 275px;
+  border: 1px solid #e2e2e2;
+  background-color: #e2e2e2;
+  margin: 0 auto 17px auto;
+}
+
+.resulShopping .sumTotal .checkoutLink {
+  display: block;
+  width: 273px;
+  height: 50px;
+  background-color: #f16d7f;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 auto;
+}
+
 .subscribe {
   height: 448px;
   box-sizing: border-box;
@@ -931,6 +1159,45 @@ body {
   .goods__3 {
     display: none;
   }
+  .yourBasket {
+    display: flex;
+    flex-direction: column;
+    padding-top: 59px;
+    padding-bottom: 129px;
+  }
+  .card {
+    width: 100%;
+  }
+  .cardText {
+    width: 100%;
+  }
+  .cardClose {
+    right: 24px;
+  }
+  .cardBtn {
+    margin-top: 62px;
+  }
+  .resulShopping {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: 65px;
+  }
+  .resulShopping .productData {
+    width: 360px;
+  }
+  .resulShopping .productData > input {
+    margin-top: 23px;
+  }
+  .resulShopping .productData > button {
+    margin-bottom: 0;
+  }
+  .resulShopping .sumTotal {
+    width: 360px;
+    padding-top: 20px;
+    margin-top: 39px;
+  }
   .subscribe {
     height: 614px;
   }
@@ -1182,6 +1449,79 @@ body {
   }
   .goods__3 {
     display: block;
+  }
+  .shopingCart__header {
+    text-align: center;
+  }
+  .yourBasket {
+    padding-top: 39px;
+    padding-bottom: 96px;
+  }
+  .card {
+    width: 100%;
+  }
+  .cardTop {
+    height: 188px;
+  }
+  .cardTop_margin {
+    margin-bottom: 32px;
+  }
+  .cardImage {
+    height: inherit;
+  }
+  .cardText {
+    width: 100%;
+    padding: 13px 12px 12px 17px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cardText > h2 {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 26px;
+    width: 143px;
+  }
+  .cardText > p {
+    padding-top: 4px;
+  }
+  .cardInput {
+    width: 24px;
+    height: 15px;
+    font-size: 10px;
+    line-height: 12px;
+    margin-left: 15px;
+  }
+  .cardClose {
+    top: 17px;
+    right: 12px;
+  }
+  .cardBtn {
+    margin-top: 30px;
+    height: 33px;
+  }
+  .cardBtn__all {
+    padding: 9px 17px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .cardClose {
+    width: 10px;
+    height: 11px;
+  }
+  .resulShopping {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+  .resulShopping .productData {
+    width: 100%;
+  }
+  .resulShopping .productData > button {
+    margin-bottom: 49px;
+  }
+  .resulShopping .sumTotal {
+    width: 100%;
+    margin-top: 0;
   }
   .subscribe {
     height: 550px;
