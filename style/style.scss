@@ -593,12 +593,15 @@ body {
   height: 148px;
   background-color: $lightbgc;
   &__header {
+    height: 148px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     color: $color;
-    line-height: 148px;
   }
 }
 .yourBasket {
@@ -780,11 +783,115 @@ body {
       color: #fff;
       font-weight: 300;
       font-size: 16px;
-      line-height: 19px;
       text-decoration: none;
       text-align: center;
       line-height: 50px;
       margin: 0 auto;
+    }
+  }
+}
+
+.registration {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  padding-bottom: 96px;
+  .formLeft {
+    display: flex;
+    flex-direction: column;
+    .name {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+      &_margin {
+        margin-top: 33px;
+      }
+    }
+    .inputRegistr {
+      width: 360px;
+      height: 45px;
+      margin-top: 21px;
+      padding-left: 17px;
+      border: 1px solid #a4a4a4;
+      &::-webkit-input-placeholder {
+        color: #b1b1b1;
+        font-family: inherit;
+      }
+      &::-moz-placeholder {
+        color: #b1b1b1;
+        font-family: inherit;
+      }
+      &:-ms-input-placeholder {
+        color: #b1b1b1;
+        font-family: inherit;
+      }
+      &:-moz-placeholder {
+        color: #b1b1b1;
+        font-family: inherit;
+      }
+    }
+    .radioRegistr {
+      margin-top: 31px;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
+      color: #000000;
+      font-family: inherit;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+
+      & > input {
+        margin-right: 10px;
+        border: 1px solid #a4a4a4;
+        box-sizing: border-box;
+      }
+      &Margin {
+        margin-right: 20px;
+      }
+    }
+    .textRegistr {
+      width: 360px;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #b1b1b1;
+      margin-top: 16px;
+      margin-bottom: 39px;
+    }
+    .btnRegistr {
+      width: 167px;
+      height: 50px;
+      background-color: $bgc;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff;
+      border: none;
+      transition-delay: 0.3s;
+      & > img {
+        padding-left: 20px;
+      }
+    }
+  }
+  .registrationRight {
+    width: 652px;
+    &Text {
+      padding-top: 22px;
+      padding-bottom: 5px;
+    }
+    .commonFont {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      .registrList {
+        list-style-image: url(../img/sign.svg);
+        padding-left: 22px;
+        margin-left: 27px;
+        margin-top: 16px;
+      }
     }
   }
 }
@@ -1134,6 +1241,24 @@ body {
       margin-top: 39px;
     }
   }
+  .registration {
+    padding-top: 40px;
+    .registrationRight {
+      width: 100%;
+      padding-left: 22px;
+      &Text {
+        padding-top: 32px;
+      }
+      .commonFont {
+        font-size: 16px;
+        line-height: 19px;
+        .registrList {
+          margin-left: 27px;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
   .subscribe {
     height: 614px;
 
@@ -1402,7 +1527,7 @@ body {
   }
 
   .shopingCart__header {
-    text-align: center;
+    justify-content: center;
   }
   .yourBasket {
     padding-top: 39px;
@@ -1446,6 +1571,8 @@ body {
   .cardClose {
     top: 17px;
     right: 12px;
+    width: 10px;
+    height: 11px;
   }
   .cardBtn {
     margin-top: 30px;
@@ -1456,10 +1583,7 @@ body {
     font-size: 12px;
     line-height: 14px;
   }
-  .cardClose {
-    width: 10px;
-    height: 11px;
-  }
+
   .resulShopping {
     flex-direction: column;
     width: 100%;
@@ -1474,6 +1598,28 @@ body {
     .sumTotal {
       width: 100%;
       margin-top: 0;
+    }
+  }
+
+  .registration {
+    flex-direction: column;
+    justify-content: none;
+    padding-top: 40px;
+    .formLeft {
+      .inputRegistr {
+        width: inherit;
+      }
+      .textRegistr {
+        width: inherit;
+      }
+    }
+    .registrationRight {
+      width: inherit;
+      padding-top: 40px;
+      padding-left: 0;
+      &Text {
+        padding-top: 32px;
+      }
     }
   }
 
